@@ -1,0 +1,26 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="logger.css">
+    <link rel="stylesheet" type="text/css" href="testlogger.css">
+    
+    <!-- Test runner code -->
+    <script src="yahoo-dom-event.js"></script>
+    <script src="logger.js"></script>
+    <script src="yuitest.js"></script>
+    
+    <!-- File being tested -->
+    <script src="test_code.js"></script>
+    <script src="test.js"></script>
+</head>
+<body>
+    <input type=button onClick=javascript:runAllTests() value="Run Tests">
+    
+    <script>
+        new YAHOO.tool.TestLogger();
+        
+        function runAllTests(){
+            YAHOO.tool.TestRunner.run();
+        }
+    </script>
+</body>
+</html>
